@@ -2,7 +2,7 @@
 <manifest>
   <remote name="mun"
     fetch="https://github.com"
-    revision="lineage-17.1" />
+    revision="cm-14.1" />
   <project name="h0sch180/android_device_samsung_gtaxllte" path="device/samsung/gtaxllte" remote="mun" />
   <project name="Valera1978/android_kernel_samsung_exynos7870" path="kernel/samsung/exynos7870" remote="mun" />
   <project name="BlissRoms-Devices/proprietary_vendor_samsung_gtaxllte" path="vendor/samsung/gtaxllte" remote="mun" revision="q"/>
