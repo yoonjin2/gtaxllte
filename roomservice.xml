@@ -1,12 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote name="mun"
-    fetch="https://github.com"
-    revision="cm-14.1" />
-  <project name="h0sch180/android_device_samsung_gtaxllte" path="device/samsung/gtaxllte" remote="mun" />
-  <project name="Valera1978/android_kernel_samsung_exynos7870" path="kernel/samsung/exynos7870" remote="mun" />
-  <project name="BlissRoms-Devices/proprietary_vendor_samsung_gtaxllte" path="vendor/samsung/gtaxllte" remote="mun" revision="q"/>
-  <project name="LineageOS/android_hardware_samsung" path="hardware/samsung" remote="mun" />
-  <project name="LineageOS/android_packages_resources_devicesettings" path="packages/resources/devicesettings" remote="mun" />
+  <project name="Exynos7870/android_device_samsung_exynos7870-common" path="device/samsung/exynos7870-common" remote="hal" revision="lineage-16.0" />
+  <project name="Exynos7870/android_vendor_samsung" path="vendor/samsung" remote="hal" revision="lineage-16.0" />
+  <project name="Exynos7870/proprietary_vendor_samsung_on7xelte" path="vendor/samsung/on7xelte" remote="hal" revision="lineage-16.0" />
 </manifest>
-
