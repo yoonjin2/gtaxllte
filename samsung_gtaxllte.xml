@@ -5,7 +5,7 @@
     revision="cm-14.1" />
   <project name="Valera1978/android_device_samsung_gtaxllte" path="device/samsung/gtaxllte" remote="mun" />
   <project name="Valera1978/android_kernel_samsung_exynos7870" path="kernel/samsung/exynos7870" remote="mun" />
-  <project name="Valera1978/android_vendor_samsung_gtaxllte" path="vendor/samsung/gtaxllte" remote="mun" />
+  <project name="BlissRoms-Devices/proprietary_vendor_samsung_gtaxllte" path="vendor/samsung/gtaxllte" remote="mun" revision="q" />
   <project name="LineageOS/android_hardware_samsung" path="hardware/samsung" remote="mun" />
   <project name="LineageOS/android_packages_resources_devicesettings" path="packages/resources/devicesettings" remote="mun" />
 </manifest>
