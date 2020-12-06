@@ -1,6 +1,10 @@
+  GNU nano 5.3                                                                                         .repo/local_manifests/roomservice.xml                                                                                                  
+
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <project name="Exynos7870/android_device_samsung_exynos7870-common" path="device/samsung/exynos7870-common" remote="hal" revision="lineage-16.0" />
-  <project name="Exynos7870/android_vendor_samsung" path="vendor/samsung" remote="hal" revision="lineage-16.0" />
-  <project name="Exynos7870/proprietary_vendor_samsung_on7xelte" path="vendor/samsung/on7xelte" remote="hal" revision="lineage-16.0" />
+  <remote name="mun" fetch="https://github.com/" revision="cm-14.1" />
+  <project name="Valera1978/android_vendor_samsung_gtaxllte" path="vendor/samsung" remote="mun" revision="lineage-16.0" />
+  <project name="LineageOS/android_hardware_samsung" path="hardware/samsung" remote="mun" />
+  <project name="LineageOS/android_packages_resources_devicesettings" path="packages/resources/devicesettings" remote="mun" />
+  <project name="platform/hardware/samsung_slsi/exynos5" path="hardware/samsung_slsi" remote="aosp" />
 </manifest>
