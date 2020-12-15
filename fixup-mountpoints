@@ -1829,45 +1829,33 @@ case "$DEVICE" in
             "$@"
         ;; 
 
-    "kuntao")
-        sed -i \
-            -e 's block/bootdevice/by-name/system mmcblk0p54 ' \
-            -e 's block/bootdevice/by-name/userdata mmcblk0p56 ' \
-            -e 's block/bootdevice/by-name/cache mmcblk0p53 ' \
-            -e 's block/bootdevice/by-name/persist mmcblk0p17 ' \
-            -e 's block/bootdevice/by-name/dsp mmcblk0p15 ' \
-            -e 's block/bootdevice/by-name/modem mmcblk0p1 ' \
-            -e 's block/bootdevice/by-name/fsg mmcblk0p33 ' \
-            "$@"
-        ;;
-
 "gtaxllte")
     sed -i \
-        -e 's /dev/block/by-name/BOOT /dev/block/mmcblk0p10 ' \
-        -e 's /dev/block/by-name/CACHE /dev/block/mmcblk0p21 ' \
-        -e 's /dev/block/by-name/CPEFS /dev/block/mmcblk0p4 ' \
-        -e 's /dev/block/by-name/EFS /dev/block/mmcblk0p3 ' \
-        -e 's /dev/block/by-name/PARAM /dev/block/mmcblk0p9 ' \
-        -e 's /dev/block/by-name/RADIO /dev/block/mmcblk0p14 ' \
-        -e 's /dev/block/by-name/SYSTEM /dev/block/mmcblk0p20 ' \
-        -e 's /dev/block/by-name/m9kefs1 /dev/block/mmcblk0p5 ' \
-        -e 's /dev/block/by-name/mmcblk0 mmcblk0rpmb ' \
-	-e 's /dev/block/by-name/BOTA0 /dev/block/mmcblk0p1 ' \
-        -e 's /dev/block/by-name/CARRIER /dev/block/mmcblk0p8 ' \
-        -e 's /dev/block/by-name/CP_DEBUG /dev/block/mmcblk0p23 ' \
-        -e 's /dev/block/by-name/HIDDEN /dev/block/mmcblk0p22 ' \
-        -e 's /dev/block/by-name/PERSDATA /dev/block/mmcblk0p18 ' \
-        -e 's /dev/block/by-name/RECOVERY /dev/block/mmcblk0p11 ' \
-        -e 's /dev/block/by-name/TOMBSTONES /dev/block/mmcblk0p15 ' \
-        -e 's /dev/block/by-name/m9kefs2 /dev/block/mmcblk0p6 ' \
-        -e 's /dev/block/by-name/BOTA1 /dev/block/mmcblk0p2 ' \
-        -e 's /dev/block/by-name/CDMA-RADIO /dev/block/mmcblk0p13 ' \
-        -e 's /dev/block/by-name/DNT /dev/block/mmcblk0p16 ' \
-        -e 's /dev/block/by-name/OTA /dev/block/mmcblk0p12 ' \
-        -e 's /dev/block/by-name/PERSISTENT /dev/block/mmcblk0p17 ' \
-        -e 's /dev/block/by-name/RESERVED2 /dev/block/mmcblk0p19 ' \
-        -e 's /dev/block/by-name/USERDATA /dev/block/mmcblk0p24 ' \
-        -e 's /dev/block/by-name/m9kefs3 /dev/block/mmcblk0p7 ' \
+        -e 's /def/block/bootdevice/by-name/BOOT /dev/block/mmcblk0p10 ' \
+        -e 's /def/block/bootdevice/by-name/CACHE /dev/block/mmcblk0p21 ' \
+        -e 's /def/block/bootdevice/by-name/CPEFS /dev/block/mmcblk0p4 ' \
+        -e 's /def/block/bootdevice/by-name/EFS /dev/block/mmcblk0p3 ' \
+        -e 's /def/block/bootdevice/by-name/PARAM /dev/block/mmcblk0p9 ' \
+        -e 's /def/block/bootdevice/by-name/RADIO /dev/block/mmcblk0p14 ' \
+        -e 's /def/block/bootdevice/by-name/SYSTEM /dev/block/mmcblk0p20 ' \
+        -e 's /def/block/bootdevice/by-name/m9kefs1 /dev/block/mmcblk0p5 ' \
+        -e 's /def/block/bootdevice/by-name/mmcblk0 mmcblk0rpmb ' \
+	-e 's /def/block/bootdevice/by-name/BOTA0 /dev/block/mmcblk0p1 ' \
+        -e 's /def/block/bootdevice/by-name/CARRIER /dev/block/mmcblk0p8 ' \
+        -e 's /def/block/bootdevice/by-name/CP_DEBUG /dev/block/mmcblk0p23 ' \
+        -e 's /def/block/bootdevice/by-name/HIDDEN /dev/block/mmcblk0p22 ' \
+        -e 's /def/block/bootdevice/by-name/PERSDATA /dev/block/mmcblk0p18 ' \
+        -e 's /def/block/bootdevice/by-name/RECOVERY /dev/block/mmcblk0p11 ' \
+        -e 's /def/block/bootdevice/by-name/TOMBSTONES /dev/block/mmcblk0p15 ' \
+        -e 's /def/block/bootdevice/by-name/m9kefs2 /dev/block/mmcblk0p6 ' \
+        -e 's /def/block/bootdevice/by-name/BOTA1 /dev/block/mmcblk0p2 ' \
+        -e 's /def/block/bootdevice/by-name/CDMA-RADIO /dev/block/mmcblk0p13 ' \
+        -e 's /def/block/bootdevice/by-name/DNT /dev/block/mmcblk0p16 ' \
+        -e 's /def/block/bootdevice/by-name/OTA /dev/block/mmcblk0p12 ' \
+        -e 's /def/block/bootdevice/by-name/PERSISTENT /dev/block/mmcblk0p17 ' \
+        -e 's /def/block/bootdevice/by-name/RESERVED2 /dev/block/mmcblk0p19 ' \
+        -e 's /def/block/bootdevice/by-name/USERDATA /dev/block/mmcblk0p24 ' \
+        -e 's /def/block/bootdevice/by-name/m9kefs3 /dev/block/mmcblk0p7 ' \        ;;
         "$@"
     ;;
     *)
