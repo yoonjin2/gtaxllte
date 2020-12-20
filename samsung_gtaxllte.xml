@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<manifest>
-  <project name="antoine62/android_vendor_samsung_gtaxllte" path="vendor/samsung/gtaxllte" remote="hal" revision="halium9_treble"/>
-  <project name="LineageOS/android_packages_resources_devicesettings" path="packages/resources/devicesettings" remote="hal" />
-  <project name="antoine62/android_device_samsung_gtaxllte" path="device/samsung/gtaxllte" remote="hal" revision="halium9_treble" />
-  <project name="antoine62/android_kernel_samsung_exynos7870" path="kernel/samsung/exynos7870" remote="hal" revision="halium9_treble" />
-  <project name="Valera1978/android_hardware_samsung" path="hardware/samsung" remote="github" revision="lineage-16.0_treble" />
-</manifest>
